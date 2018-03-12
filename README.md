@@ -1,3 +1,5 @@
+TOFIX: `name`, it's taken on `npm`, won't work
+
 A script to generate youtube playlist links given video urls (no youtube account needed)
 
 # Setup
