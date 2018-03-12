@@ -1,0 +1,13 @@
+{
+    "name" : "plist",
+    "version" : "0.0.1",
+    "description" : "Generates youtube playlist link from a set of video urls",
+    "bin" :
+    {
+        "plist": "index.js"
+    },
+    "bugs" :
+    {
+        "url" : "https://github.com/dxwc/plist/issues"
+    }
+}
