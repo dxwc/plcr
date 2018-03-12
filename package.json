@@ -1,13 +1,11 @@
 {
-    "name" : "plist",
-    "version" : "0.0.1",
-    "description" : "Generates youtube playlist link from a set of video urls",
-    "bin" :
-    {
-        "plist": "index.js"
+    "name": "plcr",
+    "version": "0.0.1",
+    "description": "Generates youtube playlist link from a set of video urls",
+    "bin": {
+        "plcr": "plcr.js"
     },
-    "bugs" :
-    {
-        "url" : "https://github.com/dxwc/plist/issues"
+    "bugs": {
+        "url": "https://github.com/dxwc/plcr/issues"
     }
 }

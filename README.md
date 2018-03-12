@@ -1,36 +1,48 @@
-TOFIX: `name`, it's taken on `npm`, won't work
-
-A script to generate youtube playlist links given video urls (no youtube account needed)
+A simple script to generate youtube playlist link given video urls (no youtube account needed)
 
 # Setup
 
+
 1. Have [Node.js](https://nodejs.org/en/) installed (any version
    higher than 6 should be fine)
-2. Run command `npm install -g plist` and you are all set
+
+### Option 1
+
+2. Save [plcr.js](plcr.js) and use it as a script
+    + Example A: On linux, `cd` to saved and run `chmod u+x plcr.js`, it will now be available for use from the directory by name `./plcr.js`
+    + Example B: `cd` in saved dir and run directly with node, ex: `node plcr.js`
+
+### Option 2
+
+2. Run command `npm install -g plcr` to install it from npm globally, `plcr` will be
+   available for use from any directory
     + To update to latest version anytime after installation, re-run above command
-    + To uninstall, run `npm uninstall -g plist`
+    + To uninstall, run `npm uninstall -g plcr`
     + _Unix may need `sudo`_
     + _Windows may need running cmd as admistrator_
 
-# Usages example
-
-`plist https://www.youtube.com/watch?v=xHu7qI1gDPA https://www.youtube.com/watch?v=2DrjQBL5FMU` will produce the url:
-
-`https://www.youtube.com/embed/xHu7qI1gDPA?playlist=2DrjQBL5FMU&rel=0&modestbranding=1`
-
-For above version, adding `-l` or `--loop` flag will crate looping playlist
-
-If there is a file `foo.txt` with content:
+# Use
 
 ```
-https://www.youtube.com/watch?v=xHu7qI1gDPA
-https://www.youtube.com/watch?v=2DrjQBL5FMU
+Usages:
+
+    plist url1 url2 url3 ...
+    pipe-urls-seperated-by-newlines | plist
+
+Options
+
+    NOTE: urls have to be in form https://www.youtube.com/watch/v?=...
+    NOTE: Options are not available for use with pipe
+
+    -l, --loop
+        Make playlist loop
+    -v, --version
+        Prints version
+    -h, --help
+        Print this help
 ```
 
-If on linux, running bash shell command `cat foo.txt | plist` will output
-`https://www.youtube.com/embed/xHu7qI1gDPA?playlist=2DrjQBL5FMU`
-
-----
+----------------------------------------------------------------------------
 This software was not produced by or directly for YouTube, LLC and has no
 affiliation with the LLC. Use this software only at your own volition.
 

@@ -37,13 +37,50 @@ function generate(arr)
         }
         else if(link === '-h' || link === '--help')
         {
-            console.info('> Pass youtube video urls as arguments seperated by space');
-            console.info('> Alternatively pipe the urls seperated by newline');
+            console.info(
+`plist
+
+    Generates youtube playlist links given video urls
+
+Usages:
+
+    plist url1 url2 url3 ...
+    pipe-urls-seperated-by-newlines | plist
+
+Options
+
+    NOTE: urls have to be in form https://www.youtube.com/watch/v?=...
+    NOTE: Options are not available for use with pipe
+
+    -l, --loop
+        Make playlist loop
+    -v, --version
+        Prints version
+    -h, --help
+        Print this help
+
+Bugs/Fix
+
+    Repository: https://github.com/dxwc/plist/
+    Report here: https://github.com/dxwc/plist/issues
+
+----------------------------------------------------------------------------
+This software was not produced by or directly for YouTube, LLC and has no
+affiliation with the LLC. Use this software only at your own volition.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.`
+            );
             process.exit(0);
         }
         else if(link === '-v' || link === '--version')
         {
-            console.info('plist 0.0.1');
+            console.info('plcr 0.0.1');
             process.exit(0);
         }
         else
