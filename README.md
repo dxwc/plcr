@@ -8,7 +8,7 @@ A simple script to generate youtube playlist link given video urls (no youtube a
 
 ### Option 1
 
-2. Save [plcr.js](plcr.js) and use it as a script
+2. Save [plcr.js](https://raw.githubusercontent.com/dxwc/plcr/master/plcr.js) and use it as a script
     + Example A: On linux, `cd` to saved and run `chmod u+x plcr.js`, it will now be available for use from the directory by name `./plcr.js`
     + Example B: `cd` in saved dir and run directly with node, ex: `node plcr.js`
 
@@ -24,10 +24,10 @@ A simple script to generate youtube playlist link given video urls (no youtube a
 # Use
 
 ```
-Usages:
+Usages
 
-    plist url1 url2 url3 ...
-    pipe-urls-seperated-by-newlines | plist
+    plcr url1 url2 url3 ...
+    pipe-urls-seperated-by-newlines | plcr
 
 Options
 

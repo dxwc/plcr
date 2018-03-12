@@ -38,14 +38,14 @@ function generate(arr)
         else if(link === '-h' || link === '--help')
         {
             console.info(
-`plist
+`plcr
 
     Generates youtube playlist links given video urls
 
-Usages:
+Usages
 
-    plist url1 url2 url3 ...
-    pipe-urls-seperated-by-newlines | plist
+    plcr url1 url2 url3 ...
+    pipe-urls-seperated-by-newlines | plcr
 
 Options
 
@@ -61,8 +61,8 @@ Options
 
 Bugs/Fix
 
-    Repository: https://github.com/dxwc/plist/
-    Report here: https://github.com/dxwc/plist/issues
+    Repository: https://github.com/dxwc/plcr/
+    Report here: https://github.com/dxwc/plcr/issues
 
 ----------------------------------------------------------------------------
 This software was not produced by or directly for YouTube, LLC and has no
@@ -96,6 +96,7 @@ if(process.argv.length > 2)
     generate(process.argv.slice(2));
     playlist_link +=
         `${counter > 1 ? '&' : '?'}rel=0${loop ? '&loop=1' : ''}&modestbranding=1`;
+    console.info();
     console.info(playlist_link);
 }
 else
@@ -108,6 +109,7 @@ else
     {
         process.stdin.end();
         generate(content.split('\n').filter((val) => val.length));
+        console.info();
         console.info(playlist_link);
     });
 }
