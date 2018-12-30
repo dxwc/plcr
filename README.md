@@ -1,3 +1,5 @@
+[ Use from `npm`, Repository/master is currently a construction site ]
+
 A simple script to generate youtube playlist link given video urls (no youtube account needed)
 
 # Setup

@@ -7,5 +7,8 @@
     },
     "bugs": {
         "url": "https://github.com/dxwc/plcr/issues"
+    },
+    "dependencies": {
+        "vid_data": "^0.1.2"
     }
 }
