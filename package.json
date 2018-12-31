@@ -1,7 +1,7 @@
 {
     "name": "plcr",
-    "version": "0.0.1",
-    "description": "Generates youtube playlist link from a set of video urls",
+    "version": "1.0.0",
+    "description": "Generates youtube playlist link given a set of video urls",
     "bin": {
         "plcr": "plcr.js"
     },
