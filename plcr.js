@@ -38,7 +38,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 IN THE SOFTWARE.
 
-plcr version 1.0.0
+plcr version 1.0.2
 Send bug report here : https://github.com/dxwc/plcr/issues
 `;
 
@@ -66,7 +66,7 @@ process.argv.forEach((one) =>
         one === '--version'
     )
     {
-        console.info('plcr 1.0.0');
+        console.info('plcr 1.0.2');
         process.exit(0);
     }
     else if
