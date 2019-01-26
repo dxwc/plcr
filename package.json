@@ -1,6 +1,6 @@
 {
     "name": "plcr",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Generates youtube playlist link given a set of video urls",
     "bin": {
         "plcr": "plcr.js"
@@ -9,6 +9,6 @@
         "url": "https://github.com/dxwc/plcr/issues"
     },
     "dependencies": {
-        "vid_data": "^0.1.2"
+        "vid_data": "^0.3.0"
     }
 }
