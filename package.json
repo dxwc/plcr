@@ -1,7 +1,17 @@
 {
     "name": "plcr",
-    "version": "1.0.2",
-    "description": "Generates youtube playlist link given a set of video urls",
+    "version": "1.1.0",
+    "description": "Generates youtube playlist link given a set of video urls or locally import and save playlist",
+    "keywords": [
+        "youtube",
+        "video",
+        "playlist",
+        "create",
+        "generate",
+        "import",
+        "locally",
+        "save"
+    ],
     "bin": {
         "plcr": "plcr.js"
     },
@@ -9,6 +19,7 @@
         "url": "https://github.com/dxwc/plcr/issues"
     },
     "dependencies": {
-        "vid_data": "^0.3.0"
+        "vid_data": "^0.3.1",
+        "ytpl": "^0.1.14"
     }
 }
