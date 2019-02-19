@@ -1,6 +1,6 @@
 {
     "name": "plcr",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "description": "Generates youtube playlist link given a set of video urls or locally import and save playlist",
     "keywords": [
         "youtube",

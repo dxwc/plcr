@@ -70,13 +70,13 @@ if
     process.argv[0] === '-i' ||
     process.argv[0] === '--import' ||
     process.argv[0] === '-ix' ||
-    process.argv[0] === '-improtx'
+    process.argv[0] === '--importx'
 )
 {
     import_playlist
     (
         process.argv[1],
-        (process.argv[0] === '-ix' || process.argv[0] === '-improtx')
+        (process.argv[0] === '-ix' || process.argv[0] === '--importx')
     )
     .then(() =>
     {
